@@ -1,0 +1,20 @@
+<p>conditional works!</p>
+<p>{{Count}}</p>
+<button (click)="Increment()">Increment</button>
+@if(Count%2==0){
+    <div>First</div>
+}
+@else{
+    <div>Second</div>
+}
+<button (click)="Show(true)">Show</button>
+<button (click)="Show(false)">Hide</button>
+@if(a){
+    <div>BOX</div>
+}
+<button (click)="Toggle('red') ">Red</button>
+<button (click)="Toggle('blue')">Blue</button>
+<button (click)="Toggle('green')">Green</button>
+<button (click)="Toggle('gold')">Gold</button>
+<button (click)="Toggle('black')">Other</button>
+<div [style.background-color]="colorVal">{{ colorVal }}</div>

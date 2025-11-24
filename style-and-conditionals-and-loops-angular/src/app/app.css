@@ -1,0 +1,9 @@
+h1{
+    background-color: rgb(68, 4, 68);
+    color: white;
+    padding: 20px;
+}
+
+hr{
+    border: 2px solid red;
+}

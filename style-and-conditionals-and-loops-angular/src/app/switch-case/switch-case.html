@@ -1,0 +1,27 @@
+<p>switch-case works!</p>
+<input type="text" id="value" (input)="func($event)" placeholder="Enter number 1–5" />
+<p>Selected Color: {{ color }}</p>
+<div [style.background]="color"
+     style="width:150px; height:50px; margin-top:10px; border:1px solid black">
+</div>
+
+@switch (color) {
+  @case ('red') {
+    <p style="color:red;">RED SELECTED</p>
+  }
+  @case ('blue') {
+    <p style="color:blue;">BLUE SELECTED</p>
+  }
+  @case ('green') {
+    <p style="color:green;">GREEN SELECTED</p>
+  }
+  @case ('gold') {
+    <p style="color:gold;">GOLD SELECTED</p>
+  }
+  @case ('black') {
+    <p style="color:black;">BLACK SELECTED</p>
+  }
+  @default {
+    <p style="color:gray;">INVALID COLOR</p>
+  }
+}
