@@ -1,0 +1,8 @@
+<input placeholder="Name" (input)="name.set($any($event.target).value)" />
+<input placeholder="Email" (input)="email.set($any($event.target).value)" />
+
+<p>Name: {{ name() }}</p>
+<p>Email: {{ email() }}</p>
+
+<p style="color: green;" *ngIf="isValid()">Form is valid ✔</p>
+<p style="color: red;" *ngIf="!isValid()">Form is invalid ✘</p>
