@@ -1,0 +1,14 @@
+<div class="todo-header">    
+    <div class="gap">
+        <h1 class=>Todo List</h1>
+        <input type="text" placeholder="Enter your tasks" [(ngModel)]="task" />
+        <button (click)="addTask()">Add Task</button>
+    </div>
+    @for(task of taskList; track task.id) {
+        <div class="gap">    
+            <div class="div-id">{{task.id}}.</div>
+            <div class="div-name">{{task.name}}</div>
+            <div class="div-delete"><button (click)="deleteTask(task.id)" class="div-delete-button">Delete</button></div>
+        </div>
+    }
+</div>
