@@ -1,1 +1,12 @@
-<p>login works!</p>
+<div>
+  <input type="text" placeholder="Enter your name" (input)="GetName($event)" />
+  <input type="text" placeholder="Enter your email" (input)="GetEmail($event)" />
+  <input type="password" placeholder="Enter your password" />
+
+  <button
+    type="button"
+    [routerLink]="['/profile', { name: userName, email: userEmail }]"
+  >
+    Login
+  </button>
+</div>

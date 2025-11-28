@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet, Header],
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  `,
 })
-export class App {
-  protected readonly title = signal('Remaining-topics-with-routing');
-}
+export class App {}
