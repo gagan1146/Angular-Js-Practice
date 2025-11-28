@@ -1,3 +1,8 @@
 <h1>Profile</h1>
-<p>{{name}}</p>
-<p>{{email}}</p>
+
+@if (login) {
+  <p>Welcome, {{ name }}</p>
+}
+@else {
+  <p>Invalid Login Credentials</p>
+}
