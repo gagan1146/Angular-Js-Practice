@@ -1,8 +1,15 @@
 <h1>Profile</h1>
 
 @if (login) {
-  <p>Welcome, {{ name }}</p>
+
+    @if (!name || name.length === 0) {
+        <p>Welcome through Login</p>
+    }
+    @else {
+        <p>Welcome, {{ name }}</p>
+    }
+
 }
 @else {
-  <p>Invalid Login Credentials</p>
+    <p>Invalid Login Credentials</p>
 }

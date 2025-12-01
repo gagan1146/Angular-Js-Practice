@@ -1,11 +1,10 @@
 <div>
-  <input type="text" placeholder="Enter your name" (input)="GetName($event)" />
   <input type="text" placeholder="Enter your email" (input)="GetEmail($event)" />
-  <input type="password" placeholder="Enter your password" />
+  <input type="password" placeholder="Enter your password" (input)="GetPassword($event)" />
 
   <button
     type="button"
-    [routerLink]="['/profile', { name: userName, email: userEmail }]"
+    [routerLink]="['/profile', { email: userEmail, password: userPassword }]"
   >
     Login
   </button>

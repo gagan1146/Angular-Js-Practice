@@ -3,18 +3,24 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
-  imports: [],
   templateUrl: './profile.html',
-  styleUrl: './profile.css',
+  styleUrls: ['./profile.css'],
 })
 export class Profile {
-  name:string|undefined|null = "";
-  email:string|undefined|null = "";
-  login:boolean = false;
-  constructor(route:ActivatedRoute){
+  name: string | null = '';
+  email: string | null = '';
+  password: string | null = '';
+  login = false;
+
+  constructor(route: ActivatedRoute) {
     this.name = route.snapshot.paramMap.get('name');
     this.email = route.snapshot.paramMap.get('email');
-    if(this.name == "Gagan Sharma" && this.email == "gagansharma@gmail.com"){
+    this.password = route.snapshot.paramMap.get('password');
+
+    if (
+      (this.name === 'Gagan Sharma' && this.email === 'gagansharma@gmail.com') ||
+      (this.password === '12345' && this.email === 'gagansharma@gmail.com')
+    ) {
       this.login = true;
     }
   }

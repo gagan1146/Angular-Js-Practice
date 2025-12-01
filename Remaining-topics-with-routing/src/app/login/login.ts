@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 export class Login {
   userName: string = '';
   userEmail: string = '';
+  userPassword: string = '';
 
   GetName(event: Event) {
     this.userName = (event.target as HTMLInputElement).value;
@@ -18,5 +19,9 @@ export class Login {
 
   GetEmail(event: Event) {
     this.userEmail = (event.target as HTMLInputElement).value;
+  }
+
+  GetPassword(event: Event) {
+    this.userPassword = (event.target as HTMLInputElement).value;
   }
 }
