@@ -8,6 +8,7 @@ import { Details } from './details/details';
 import { FormGroup } from '@angular/forms';
 import { TemplateForm } from './template-form/template-form';
 import { BackgroundChanger } from './background-changer/background-changer';
+import { FormUsingNg } from './form-using-ng/form-using-ng';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,5 +21,6 @@ export const routes: Routes = [
   { path: 'details', component: Details },
   { path: "template-form", component: TemplateForm},
   { path: "background-changer", component: BackgroundChanger},
+  { path: "form-using-ng", component: FormUsingNg},
   { path: '**', redirectTo: 'home' }
 ];

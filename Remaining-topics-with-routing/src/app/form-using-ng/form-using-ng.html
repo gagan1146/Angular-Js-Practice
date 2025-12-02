@@ -1,0 +1,12 @@
+<form action="" method="post">
+    <input type="text" placeholder="Enter your name" (input)="getName($event)">
+    <input type="text" placeholder="Enter your email" (input)="getEmail($event)">
+    <input type="text" placeholder="Enter your password" (input)="getPassword($event)">
+</form>
+
+<h1>Displaying Form Data</h1>
+{{name}}
+<hr>
+{{email}}
+<hr>
+<!-- {{password}} -->
