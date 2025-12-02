@@ -6,6 +6,8 @@ import { Register } from './register/register';
 import { Users } from './users/users';
 import { Details } from './details/details';
 import { FormGroup } from '@angular/forms';
+import { TemplateForm } from './template-form/template-form';
+import { BackgroundChanger } from './background-changer/background-changer';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,5 +18,7 @@ export const routes: Routes = [
   { path: 'register', component: Register },
   { path: 'users', component: Users },
   { path: 'details', component: Details },
-  { path: '**', redirectTo: 'home' },
+  { path: "template-form", component: TemplateForm},
+  { path: "background-changer", component: BackgroundChanger},
+  { path: '**', redirectTo: 'home' }
 ];

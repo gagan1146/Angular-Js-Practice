@@ -1,0 +1,15 @@
+div{
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 3px solid orange;
+}
+
+.page{
+    height: 70vh;
+    width: 90%;
+}

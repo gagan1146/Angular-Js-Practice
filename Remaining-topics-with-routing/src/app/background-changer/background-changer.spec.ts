@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormGroup } from '@angular/forms';
+import { BackgroundChanger } from './background-changer';
 
-describe('FormGroup', () => {
-  let component: FormGroup;
-  let fixture: ComponentFixture<FormGroup>;
+describe('BackgroundChanger', () => {
+  let component: BackgroundChanger;
+  let fixture: ComponentFixture<BackgroundChanger>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormGroup]
+      imports: [BackgroundChanger]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FormGroup);
+    fixture = TestBed.createComponent(BackgroundChanger);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

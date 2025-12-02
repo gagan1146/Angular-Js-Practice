@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormGroup } from '@angular/forms';
+import { TemplateForm } from './template-form';
 
-describe('FormGroup', () => {
-  let component: FormGroup;
-  let fixture: ComponentFixture<FormGroup>;
+describe('TemplateForm', () => {
+  let component: TemplateForm;
+  let fixture: ComponentFixture<TemplateForm>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormGroup]
+      imports: [TemplateForm]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FormGroup);
+    fixture = TestBed.createComponent(TemplateForm);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

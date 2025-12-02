@@ -10,5 +10,6 @@ import { Header } from './header/header';
     <app-header></app-header>
     <router-outlet></router-outlet>
   `,
+  styleUrl:'./app.css'
 })
 export class App {}

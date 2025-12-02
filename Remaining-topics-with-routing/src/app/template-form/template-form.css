@@ -1,0 +1,18 @@
+input{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 14px;
+    width: 400px;
+    top: 40px;
+    left: 35%;
+    margin: 20px;
+}
+:host {
+  display: block;
+  height: 80vh;
+  background: rgb(152, 232, 31);
+}
