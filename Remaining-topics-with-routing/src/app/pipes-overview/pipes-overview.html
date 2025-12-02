@@ -1,0 +1,49 @@
+<hr>
+<hr>
+<hr>
+<h1>Pipes Overview</h1>
+<hr>
+<p>In this section, we will explore the various built-in pipes available in Angular and how to use them effectively in our applications.</p>
+<hr>
+<p>Angular provides a set of built-in pipes that can be used to transform data in templates. These pipes can format dates, numbers, strings, and more.</p>
+<hr>
+<p>Here are some commonly used built-in pipes:</p>
+<hr>
+<ul>
+    <li><strong>Date Pipe:</strong> Formats a date value according to locale rules.</li>
+    <hr>
+    <li><strong>Currency Pipe:</strong> Formats a number as currency.</li>
+    <hr>
+    <li><strong>Decimal Pipe:</strong> Formats a number as decimal.</li>
+    <hr>
+    <li><strong>Percent Pipe:</strong> Formats a number as a percentage.</li>
+    <hr>
+    <li><strong>Json Pipe:</strong> Converts an object into a JSON string.</li>
+    <hr>
+    <li><strong>Slice Pipe:</strong> Creates a new array or string containing a subset of the original.</li>
+    <hr>
+    <li><strong>UpperCase Pipe:</strong> Transforms text to uppercase.</li>
+    <hr>
+    <li><strong>LowerCase Pipe:</strong> Transforms text to lowercase.</li>
+    <hr>
+    <li><strong>TitleCase Pipe:</strong> Transforms text to title case.</li>
+</ul>
+<hr>
+<p>To use a pipe in Angular, you can apply it in the template using the pipe operator (|). For example:</p>
+<hr>
+<pre>
+    {{ currentDate | date:'fullDate' }}
+    <hr>
+    {{ numberValue | currency:'USD':true }}
+    <hr>
+    {{ sampleText | uppercase }}
+    <hr>
+    {{ jsonData | json }}
+    <hr>
+    {{ arrayData | slice:1:3 }}
+    <hr>
+    {{ sampleText | titlecase }}
+    <hr>
+    {{ numberValue | percent }}
+    <hr>
+</pre>

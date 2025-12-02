@@ -10,6 +10,7 @@ import { TemplateForm } from './template-form/template-form';
 import { BackgroundChanger } from './background-changer/background-changer';
 import { FormUsingNg } from './form-using-ng/form-using-ng';
 import { ParentToChildData } from './parent-to-child-data/parent-to-child-data';
+import { PipesOverview } from './pipes-overview/pipes-overview';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,5 +25,6 @@ export const routes: Routes = [
   { path: "background-changer", component: BackgroundChanger},
   { path: "form-using-ng", component: FormUsingNg},
   { path: "parent-to-child-data", component: ParentToChildData},
+  { path: "pipes-overview", component: PipesOverview},
   { path: '**', redirectTo: 'home' }
 ];
