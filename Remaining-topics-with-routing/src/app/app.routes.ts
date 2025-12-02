@@ -9,6 +9,7 @@ import { FormGroup } from '@angular/forms';
 import { TemplateForm } from './template-form/template-form';
 import { BackgroundChanger } from './background-changer/background-changer';
 import { FormUsingNg } from './form-using-ng/form-using-ng';
+import { ParentToChildData } from './parent-to-child-data/parent-to-child-data';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,5 +23,6 @@ export const routes: Routes = [
   { path: "template-form", component: TemplateForm},
   { path: "background-changer", component: BackgroundChanger},
   { path: "form-using-ng", component: FormUsingNg},
+  { path: "parent-to-child-data", component: ParentToChildData},
   { path: '**', redirectTo: 'home' }
 ];
