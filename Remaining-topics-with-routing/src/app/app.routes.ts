@@ -11,6 +11,7 @@ import { BackgroundChanger } from './background-changer/background-changer';
 import { FormUsingNg } from './form-using-ng/form-using-ng';
 import { ParentToChildData } from './parent-to-child-data/parent-to-child-data';
 import { PipesOverview } from './pipes-overview/pipes-overview';
+import { UseCustomPipe } from './use-custom-pipe/use-custom-pipe';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,5 +27,6 @@ export const routes: Routes = [
   { path: "form-using-ng", component: FormUsingNg},
   { path: "parent-to-child-data", component: ParentToChildData},
   { path: "pipes-overview", component: PipesOverview},
+  { path: "use-custom-pipe", component: UseCustomPipe},
   { path: '**', redirectTo: 'home' }
 ];

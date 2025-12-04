@@ -1,0 +1,12 @@
+<input type="number" placeholder="Enter your amount in INR" [(ngModel)]="amountInINR" />
+
+<h1>Select Currency</h1>
+<select [(ngModel)]="selectedCurrency">
+    <option value="USD" selected>USD</option>
+    <option value="EUR">EUR</option>
+    <option value="GBP">GBP</option>
+    <option value="JPY">JPY</option>
+</select>
+
+<h2>Converted Amount:</h2>
+<p>{{ amountInINR | currencyConvertor:selectedCurrency }}</p>

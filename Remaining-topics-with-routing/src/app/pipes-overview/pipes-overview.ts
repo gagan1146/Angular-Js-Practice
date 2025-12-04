@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './pipes-overview.css',
 })
 export class PipesOverview {
-  // Component logic goes here
   title = 'Pipes Overview';
   currentDate = new Date();
   sampleText = 'Angular Pipes Example';
@@ -16,7 +15,6 @@ export class PipesOverview {
   jsonData = { name: 'Angular', version: '12.0.0', type: 'Framework' };
   arrayData = ['Angular', 'React', 'Vue', 'Svelte'];
 
-  // Example methods to demonstrate pipes
   getFormattedDate(): string {
     return this.currentDate.toLocaleDateString();
   }
